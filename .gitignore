@@ -159,6 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-learning-bazel/projeto-02/bazel-out/
-learning-bazel/projeto-02/bazel-out
+bazel-out
 bazel-bin
+bazel-testlogs
+bazel-projeto-02
