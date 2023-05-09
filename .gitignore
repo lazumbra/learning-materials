@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 
 learning-bazel/projeto-02/bazel-out/
+learning-bazel/projeto-02/bazel-out
+bazel-bin
