@@ -1,0 +1,23 @@
+load("@rules_python//python:defs.bzl", "py_binary")
+load("@my_deps//:requirements.bzl", "requirement")
+
+py_library(
+    name = "calculator",
+    srcs = ["calculator.py"],
+    deps = [requirement("Flask"),
+        requirement("Jinja2"),
+        requirement("Werkzeug"),
+        requirement("itsdangerous"),
+        requirement("click"),
+        requirement("MarkupSafe"),
+    ],
+    visibility = ["//visibility:public"]
+)
+
+py_test(
+    name = "calculator_test",
+    srcs = ["calculator_test.py"],
+    deps = [
+        "//calculator:calculator"
+    ],
+)
